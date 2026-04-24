@@ -28,7 +28,7 @@ const AddExpense = ({ onExpenseAdded }) => {
         }
 
         try {
-            const response = await fetch('http://localhost:3000/expense/add-expense', {
+            const response = await fetch('https://expense-tracker-three-neon.vercel.app/expense/add-expense', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

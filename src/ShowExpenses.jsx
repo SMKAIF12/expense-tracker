@@ -11,7 +11,7 @@ const ShowExpenses = ({ refreshTrigger }) => {
         setLoading(true);
         try {
             // Requirement: Support optional query parameters for category and sort
-            const url = `http://localhost:3000/expense/expenses?category=${category}&sort=${sort}`;
+            const url = `https://expense-tracker-three-neon.vercel.app/expense/expenses?category=${category}&sort=${sort}`;
             const response = await fetch(url);
             const data = await response.json();
             
