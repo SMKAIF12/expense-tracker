@@ -27,7 +27,7 @@ const ShowExpenses = ({ onEdit }) => {
     const refElement = useRef(null);
     const getOverallTotal = async () => {
         try {
-            const response = await axios.get(`https://expense-tracker-three-neon.vercel.app/expense/total?${category}`, {
+            const response = await axios.get(`https://expense-tracker-bice-rho.vercel.app/expense/total?${category}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 }
@@ -43,7 +43,7 @@ const ShowExpenses = ({ onEdit }) => {
         }
     }
     const fetch = (page) => {
-        const url = `https://expense-tracker-three-neon.vercel.app/expense/get?category=${category}&sort=${sort}&limit=${limit}&page=${page}&search=${debouncedSearchTerm}`;
+        const url = `https://expense-tracker-bice-rho.vercel.app/expense/get?category=${category}&sort=${sort}&limit=${limit}&page=${page}&search=${debouncedSearchTerm}`;
         return axios.get(url, {
             headers: {
                 Authorization: `Bearer ${token}`
@@ -57,7 +57,7 @@ const ShowExpenses = ({ onEdit }) => {
     })
     const deleteMutation = useMutation({
         mutationFn: async (expense) => {
-            return await axios.delete(`https://expense-tracker-three-neon.vercel.app/expense/delete/${expense._id}`, {
+            return await axios.delete(`https://expense-tracker-bice-rho.vercel.app/expense/delete/${expense._id}`, {
                 headers: {
                     Authorization: `Bearer ${token}`
                 },

@@ -13,7 +13,7 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await axios.post('https://expense-tracker-three-neon.vercel.app/user/login', {
+            const response = await axios.post('https://expense-tracker-bice-rho.vercel.app/user/login', {
                 username: username,
                 password: password
             })

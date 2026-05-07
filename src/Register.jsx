@@ -30,7 +30,7 @@ const Register = () => {
         }
 
         try {
-            const response = await axios.post('https://expense-tracker-three-neon.vercel.app/user/register', {
+            const response = await axios.post('https://expense-tracker-bice-rho.vercel.app/user/register', {
                 username,
                 email,
                 password

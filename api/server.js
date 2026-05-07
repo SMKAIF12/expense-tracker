@@ -9,7 +9,13 @@ connectDB();
 const app = express();
 app.use(express.json());
 // Allow all origins
-app.use(cors());
+const allowedOrigins = ["https://expense-tracker-bice-rho.vercel.app"];
+
+app.use(cors({
+  origin: allowedOrigins,
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  credentials: true
+}));
 const PORT = process.env.PORT || 3000;
 app.listen(PORT, () => {
     console.log('Server is now listening on: ', process.env.PORT);

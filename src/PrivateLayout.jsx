@@ -16,7 +16,7 @@ const PrivateLayout = () => {
                 return;
             }
             try {
-                await axios.get('https://expense-tracker-three-neon.vercel.app/user/auth', {
+                await axios.get('https://expense-tracker-bice-rho.vercel.app/user/auth', {
                     headers: {
                         Authorization: `Bearer ${token}`
                     }

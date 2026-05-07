@@ -23,7 +23,7 @@ const Navbar = () => {
     getGreetings();
   }, [])
   const fetch = async () => {
-    return await axios.get('https://expense-tracker-three-neon.vercel.app/expense/get', {
+    return await axios.get('https://expense-tracker-bice-rho.vercel.app/expense/get', {
       headers: {
         Authorization: `Bearer ${token}`
       }

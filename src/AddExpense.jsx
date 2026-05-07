@@ -45,7 +45,7 @@ const AddExpense = () => {
     const [idempotencyKey, setIdempotencyKey] = useState(uuidv4());
     const categories = ['Food', 'Travel', 'Rent', 'Utilities', 'Entertainment', 'Others'];
     const queryClient = useQueryClient();
-    const URL = 'https://expense-tracker-three-neon.vercel.app/expense';
+    const URL = 'https://expense-tracker-bice-rho.vercel.app/expense';
 
     const clearFields = async () => {
         setFormData({
