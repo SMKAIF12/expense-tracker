@@ -1,26 +1,21 @@
 import { useState } from "react";
-import AddExpense from "./AddExpense";
-import ShowExpenses from "./ShowExpenses";
+import { BrowserRouter, Route, Routes } from "react-router";
+import PrivateLayout from "./PrivateLayout";
+import Login from "./Login";
+import Register from "./Register";
+import ExpenseTracker from "./ExpenseTracker";
 const App = () => {
-  const [refreshTrigger, setRefreshTrigger] = useState(0);
-
-  // This function is passed to AddExpense
-  const handleExpenseAdded = () => {
-    setRefreshTrigger(prev => prev + 1);
-  };
-
   return (
-    <div className="container py-4">
-      <h1 className="text-center mb-4">Expense Tracker</h1>
-      
-      {/* 1. Pass the function to the Form */}
-      <AddExpense onExpenseAdded={handleExpenseAdded} />
-      
-      <hr className="my-5" />
-
-      {/* 2. Pass the trigger to the List */}
-      <ShowExpenses refreshTrigger={refreshTrigger} />
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/login" element={<Login/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/" element={<Login/>}/>
+        <Route element={<PrivateLayout />}>
+          <Route path="/addexpense" element={<ExpenseTracker />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 };
 export default App

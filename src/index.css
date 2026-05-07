@@ -1,0 +1,90 @@
+.loginform{
+    gap: 10px;
+}
+.page-num input{
+    width: 35px;
+    height: 25px;
+    margin-top: 7px;
+    outline: none I !important;
+    border: none !important;
+    border-radius: 10px !important;
+}
+.page-num p {
+    margin: 10px 5px;
+}
+.add-expense{
+    position: relative;
+    left: 60px;
+    width: 1400px;
+    /* background-color: #fcb69f !important; */
+    background-color:rgba(240, 255, 255, 0.557) !important;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.308);
+}
+.container thead{
+    background-color: #CFE2FF;
+}
+
+.custom-thead {
+    background-color: #CFE2FF !important;
+}
+
+.custom-thead th {
+    background-color: inherit !important;
+    color: black !important;
+    border-bottom: none;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Inter', sans-serif !important;
+    background: linear-gradient(to right, #ffecd2, #fcb69f);
+}
+
+.add-expense button:first-child{
+    background-color: #10B981;
+     /* background: linear-gradient(to left, #ffecd2, #fcb69f); */
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    color: white;
+}
+.add-expense button:last-child{
+    background-color: #F0E9B6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+    color: black;
+}
+
+.expense-table tbody tr td {
+    background-color: #ffecd2 !important;
+    color: #333 !important;
+    border-bottom: 1px solid #dee2e6;
+}
+.expense-table tbody tr:nth-child(even) td {
+    background-color: #fcb69fbb !important; 
+}
+.expense-table tbody tr:hover td {
+    background-color: #ffecd270 !important;
+}
+.table-container {
+    border-radius: 8px;
+    box-shadow: 0 8px 20px 3px rgba(0,0,0,0.4) !important;
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+.total-div {
+   box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.308) !important;
+}
+.rows {
+    justify-content: center;
+    align-items: center;
+}
+.export-menu{
+    width: 125px !important;
+    position: relative;
+    left: 1010px;
+    background-color: antiquewhite !important;
+    border-radius: 20px I !important;
+}
