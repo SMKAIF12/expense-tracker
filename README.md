@@ -1,6 +1,6 @@
 # Expense Tracker (INR)A production-grade Minitab Expense Tracker built with the MERN stack, focusing on data integrity, precision handling of currency, and network resilience.🚀 
-# Live DemoFrontend: https://expense-tracker-gl5h.vercel.app/](https://expense-tracker-gl5h.vercel.app/addexpense
-# Backend: https://expense-tracker-git-main-smkaif12s-projects.vercel.app](https://expense-tracker-bice-rho.vercel.app/
+# Live DemoFrontend: https://expense-tracker-bice-rho.vercel.app/
+# Backend: https://expense-tracker-bice-rho.vercel.app/
 # 🛠 Tech Stack
 - Frontend: React.js, Bootstrap 5 (Styling), CSS
 - Backend: Node.js, Express.js, JWT, bcrypt
