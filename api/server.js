@@ -9,7 +9,7 @@ connectDB();
 const app = express();
 app.use(express.json());
 // Allow all origins
-const allowedOrigins = ["https://expense-tracker-bice-rho.vercel.app"];
+const allowedOrigins = ["https://expense-tracker-gl5h.vercel.app/","http://localhost:5173/"];
 
 app.use(cors({
   origin: allowedOrigins,
